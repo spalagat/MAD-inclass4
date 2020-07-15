@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/intial_image"
+        android:layout_width="347dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select_image" />
+
+    <Button
+        android:id="@+id/async_button"
+        android:layout_width="215dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/async_task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intial_image" />
+
+    <Button
+        android:id="@+id/thread_button"
+        android:layout_width="209dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Thread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/async_button" />
+
+    <ProgressBar
+        android:id="@+id/image_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="251dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/intial_image"
+        app:layout_constraintTop_toTopOf="@+id/intial_image" />
+</android.support.constraint.ConstraintLayout>
